@@ -24,7 +24,7 @@ public class Main {
         deck.add(new Card(7,new Dog[]{BrownHead, BlackHead, OrangeHead, BlackTail}));
         deck.add(new Card(8,new Dog[]{OrangeTail, WhiteTail, BrownTail, BlackTail}));
         /**/
-        /**/
+        /*
         deck.add(new Card(0,new Dog[]{WhiteHead, BlackTail, OrangeTail, BlackHead}));
         deck.add(new Card(1,new Dog[]{BrownHead, OrangeTail, BlackTail, BlackHead}));
         deck.add(new Card(2,new Dog[]{WhiteHead, BrownTail, OrangeTail, BlackHead}));
