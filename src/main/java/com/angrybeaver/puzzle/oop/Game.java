@@ -1,8 +1,10 @@
 package com.angrybeaver.puzzle.oop;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 
 public class Game implements Runnable {
@@ -29,13 +31,7 @@ public class Game implements Runnable {
     }
 
     public synchronized void addThread(Algorithm algorithm){
-        try {
-            executor.submit(algorithm).get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
+        executor.submit(algorithm);
     }
 
     public String getTimeString(){
